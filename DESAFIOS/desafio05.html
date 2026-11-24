@@ -9,6 +9,39 @@
 </head>
 
 <body class="bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">DS • Bootstrap 5</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPortifolio"
+                aria-controls="menuPortifolio" aria-expanded="false" aria-label="Alternar navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menuPortifolio">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="desafio01.html">Desafio 01</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="desafio02.html">Desafio 02</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="desafio03.html">Desafio 03</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="desafio04.html">Desafio 04</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="desafio05.html">Desafio 05</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
     <div class="container my-5">
         <!-- alerta dispensável -->
         <div class="alert alert-danger alert-dismissible fade show" role="alert">
@@ -20,14 +53,13 @@
         <!-- Cabeçalho com botão de Modal -->
         <div class="d-flex justify-content-between align-items-center mb-4">
             <h2>Gestão de Livros</h2>
-            <button class="btn btn-info" onclick="adicionarEmprestimo()" data-bs-toggle="modal"
-                data-bs-target="#modalNovoProjeto">
+            <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#modalNovoProjeto">
                 + Novo Empréstimo
             </button>
         </div>
 
         <!-- Tabela Responsiva -->
-        <div class="card shadow-sm">
+        <div class="card shadow-sm mb-4">
             <div class="table-responsive">
                 <table class="table table-hover align-middle mb-0">
                     <thead class="table-primary">
@@ -39,9 +71,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <div id="cadastro" class="card" style.display="none">
 
-                        </div>
                         <tr>
                             <td>Otavio Magalhães</td>
                             <td>gray's anatomy</td>
@@ -78,12 +108,35 @@
                 </table>
             </div>
         </div>
+        <div class="card shadow-sm align-items-center border-3 border-dark row justify-content-center">
+            <div class="container bg-primary">
+                <h1 class="text-white text-center">
+                    Adicionar novo empréstimo
+                </h1>
+            </div>
+
+            <div class="col-12 col-md-6 mb-3">
+                <label class=""><strong>Nome:</strong></label>
+                <input class="form-control border-1 border-dark" type="text" placeholder="juremo">
+
+            </div>
+            <div class="col-12 col-md-6 mb-3">
+                <label class=""><strong>Email:</strong></label>
+                <input type="text" class="form-control border-1 border-dark" placeholder="SeuNomeAqui@gmail.com">
+
+            </div>
+            <div class="col-12 col-md-6 mb-3">
+                <label class=""><strong>Livro á emprestar:</strong></label>
+                <input type="text" class="form-control border-1 border-dark" placeholder="Livro Bacanudo">
+
+            </div>
+            <div class="container rouded-2 bg-warning border-1 border-dark">
+                <h2 class="text-center">O livro deve ser entregue 10 Dias após o empréstimo</h2>
+            </div>
+
+
+        </div>
     </div>
 </body>
 
 </html>
-<script type="text/javascript">
-    class adicionarEmprestimo {
-
-    }
-</script>
